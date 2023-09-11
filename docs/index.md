@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Châteauroux #
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Tableaux d'adressage
+| Adresse réseau   | @ diffusion     | masque sous-réseau (CIDR) | Plages d'@
+| :--------------- |:---------------:|--------------------------:|:-----------------
+| 172.28.0.0/19    |  172.258.31.255 | 255.255.224.0             |
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| N° de VLAN de service     | Service         | Aligné à droite |
+| :--------------- |:---------------:|---------------:|
+| 210              | Conditionnement |  |
+| 211              | Logistique      |   |
+| 212              | Transport       |     |
