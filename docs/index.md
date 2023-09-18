@@ -1,34 +1,44 @@
 # Châteauroux IP / VLAN / SSH#
 
-## Tableaux d'adressage
+## Tableau du réseau de Châteauroux
+
+| @ Réseau             | CIDR            |Broadcast                     |                  
+|:--------------------:|:---------------:|:----------------------------:|
+| 172.28.0.0           |    /19          |172.28.31.255                 |    
+
+ 
 
 
-| N° de VLAN de service| Service         |Adresse IP du VLAN + plage    |    CIDR                |
+
+## Tableaux d'adressage VLAN
+
+
+| N° de VLAN de service| Service         | VLAN plage                   |    CIDR                |
 |:--------------------:|:---------------:|:----------------------------:|:----------------------:|
-| 210                  | Management      |172.28.0.0 /24 - 172.28.0.254 |     /24                |
-| 211                  |                 |172.28.1.0 /24 - 172.28.1.254 |       /24              |
-| 212                  |                 |172.28.2.0 /24 - 172.28.2.254 |          /24           |
-| 213                  |                 |172.28.3.0 /24 - 172.28.3.254 |        /24             |
+| 210                  | Management      |172.28.0.1 /24 - 172.28.0.254 |     /24                |
+| 211                  |                 |172.28.1.1 /24 - 172.28.1.254 |     /24              |
+| 212                  |                 |172.28.2.1 /24 - 172.28.2.254 |      /24           |
+| 213                  |                 |172.28.3.1 /24 - 172.28.3.254 |        /24             |
 
 
 ## Définition d'un nom de domaine et création d'un compte SSH sur SWITCH sisco
 
 ### Création d'un nom de domaine ##
-![Commandes_domaine_cisco](img/domaine.png)
+![Commandes_domaine_cisco](domaine.png)
 
 ### Génération de la paire de clés asymétriques RSA
-![Generate_key_RSA](img/keyRSA.png)
+![Generate_key_RSA](keyRSA.png)
 
 ### Activation du protocole SSH sur le switch ou routeur Cisco
-![Compte_SSH1](img/SSH1.png)
+![Compte_SSH1](SSH1.png)
 
-![Compte_SSH2](img/SSH2.png)
+![Compte_SSH2](SSH2.png)
 
 ### Test de connexion SSH avec PuTTy
-![Test_PuTTy_SSH](img/putty.png)
+![Test_PuTTy_SSH](putty.png)
 
 # En résumé :
 
 ### Voici toutes les commandes à utiliser pour configurer une connexion SSH à un switch ou routeur Cisco
-![Resume_Commandes_SSH](img/resume.png)
+![Resume_Commandes_SSH](resume.png)
 
