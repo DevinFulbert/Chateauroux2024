@@ -1,4 +1,4 @@
-# Définition d'un nom de domaine et création d'un compte SSH sur SWITCH sisco
+# 4/ Définition d'un nom de domaine et création d'un compte SSH sur SWITCH cisco
 
 [Connexion SSH](https://www.astarox.com/blog/connexion-ssh-a-un-switch-ou-un-routeur-cisco-b12.html)
 
