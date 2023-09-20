@@ -20,6 +20,6 @@
 |                  |Serveur de fichiers                |
 
 ## Situation et répartition géographique 
-![Représentation](img/chateauroux.png)
+![Représentation](./img/chateauroux.png)
 
 Situé idéalement au centre de la France, les stocks et la logistique sont la spécialité de ce site.
