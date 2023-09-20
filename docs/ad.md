@@ -4,7 +4,7 @@
 
 Tout d'abord nous utiliserons un logiciel qui est dedié pour le **cloud computing** :
 
-![Nutanix](/img/R.png)
+![Nutanix](./img/R.png)
 
 ## <span style="color: black"> **Qu'est ce que Nutanix ?** ##
 
@@ -20,15 +20,15 @@ Pour la configuration de notre **VM (Virtual Machine)** Nutanix, on a tout d'abo
 
 **Configuration**
 
-![Configuration](/img/Capture.PNG)
+![Configuration](./img/Capture.PNG)
 
 **Resources**
 
-![Resources](/img/Capture2.PNG)
+![Resources](./img/Capture2.PNG)
 
 **Management**
 
-![Management](/img/Capture3.PNG)
+![Management](./img/Capture3.PNG)
 
 ## <span style="color: black"> **Installation de l'Active Directory** ##
 
@@ -36,40 +36,40 @@ Pour installer **l'Active Directory** nous sommes passés par l'ISO **Windows Se
 
 Avant le paramètrage et l'installation des rôles souhaitaient on va configurer **une adresse IP statique à notre serveur** :
 
-![propriete](/img/ip.png)
+![propriete](./img/ip.png)
 
 Une fois l'adresse IP attribuée nous irons sur cette fenêtre :
 
-![AD](/img/ad_menu.PNG)
+![AD](./img/ad_menu.PNG)
 
 Ensuite nous devons installer **les différents rôles** que nous voulions que notre serveur gère, dans notre cas ce sera **le DNS**, **le DHCP** et **l'AD DS** :
 
-![AD_Roles](/img/ad_roles.PNG)
+![AD_Roles](./img/ad_roles.PNG)
 
 Puis **next** jusqu'à la catégorie **"Confirmation"** :
 
-![AD_Confirmation](/img/ad_confirmation.png)
+![AD_Confirmation](./img/ad_confirmation.png)
 
 ### <span style="color: black"> **Active Directory Domain Services** ###
 
-![Alt text](/img/ad_domaine.png)
+![Alt text](./img/ad_domaine.png)
 
-![Alt text](/img/ad_rootdomain.png)
+![Alt text](./img/ad_rootdomain.png)
 
 A la place du **mylab.local** entrer votre nom de domaine que vous voulez
 
-![Alt text](/img/ad_domainmdp.png)
+![Alt text](./img/ad_domainmdp.png)
 
 Ensuite **next** jusqu'à **Additional Options** :
 
 Et dans cette section entrez-y votre **nom de domaine** (dans l'exemple **MYLAB**)
 Le notre se transformera par la suite par **local.chateauroux.sportludique.fr**
 
-![Alt text](/img/ad_netbiosname.PNG)
+![Alt text](./img/ad_netbiosname.PNG)
 
 Puis plus rien à configurer sur l'AD DS plus qu'a appuyer sur **next** et **lancer l'installation** !
 
-![Alt text](/img/ad_addsinstall.PNG)
+![Alt text](./img/ad_addsinstall.PNG)
 
 ### <span style="color: black"> **DHCP** ###
 
@@ -81,17 +81,17 @@ Pour se faire on ira **dans la section DHCP** puis nous arriverons sur cette fen
 
 #### <span style="color: black"> **Configuration de l'étendue (DHCP)** ####
 
-![Alt text](/img/nouv_etendue.png)
+![Alt text](./img/nouv_etendue.png)
 
 Pour ajouter un nom ça se trouvera à **la première étape de la création de l'étendue** (dans notre cas on l'a nommée **VLAN215_USERS**) :
 
-![nom](/img/étendue_nom.png)
+![nom](./img/étendue_nom.png)
 
 En adresse de début on y inscrit : **172.28.5.1** qui correspond à **la première adresse du VLAN215 utilisable par un hôte** ainsi que **l'adresse de fin : 172.28.5.254**
 
 Puis en longueur, **la longueur de notre masque donc 24 qui correspond à 255.255.255.0**
 
-![Alt text](/img/adresses_etendue.png)
+![Alt text](./img/adresses_etendue.png)
 
 Ensuite nous pouvons aller à l'étape suivante qui est **d'exclure des adresses de l'étendue** créer avant, pour notre cas aucune adresse ce doit d'être exclue donc aucun paramètre attendu de notre part
 
@@ -99,22 +99,22 @@ Pour la durée du bail on a laissé **8 jours (valeur par défaut)** ce paramèt
 
 A la fin de la configuration de la durée, on nous demande de **configurer les options DHCP maintenant ou plus tard** (on a choisi maintenant)
 
-![Alt text](/img/parametre_dhcp.png)
+![Alt text](./img/parametre_dhcp.png)
 
 On procèdera alors à **la configuration des options DHCP** :
 
 Dans la passerelle on y **configurera la passerelle choisie** et qui a était configurée en amont dans **notre Switch** : **172.28.5.254** pour **la passerelle du réseau USERS**
 
-![Alt text](/img/passerelle.png)
+![Alt text](./img/passerelle.png)
 
 Normalement automatiquement **votre nom de domaine sera inscrit automatiquement** :
 
-![Alt text](/img/nomdedomaine_dhcp.PNG)
+![Alt text](./img/nomdedomaine_dhcp.PNG)
 
 Pour finir **un dossier se créera dans la section IPV4** **au nom de votre étendue** ce qui correspondra à votre étendue :
 
-![Etendue](/img/etendue.PNG)
+![Etendue](./img/etendue.PNG)
 
 A la fin de votre configuration DHCP dans la catégorie **Serveur Local** vous devriez avoir ceci :
 
-![Alt text](/img/local.PNG)
+![Alt text](./img/local.PNG)
