@@ -113,8 +113,8 @@ Normalement automatiquement **votre nom de domaine sera inscrit automatiquement*
 
 Pour finir **un dossier se créera dans la section IPV4** **au nom de votre étendue** ce qui correspondra à votre étendue :
 
-![Etendue](./img/etendue.PNG)
+![Etendue](./img/etendue.png)
 
 A la fin de votre configuration DHCP dans la catégorie **Serveur Local** vous devriez avoir ceci :
 
-![Alt text](./img/local.PNG)
+![Alt text](./img/local.png)
