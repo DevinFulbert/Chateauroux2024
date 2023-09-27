@@ -40,11 +40,11 @@ Avant le paramètrage et l'installation des rôles souhaitaient on va configurer
 
 Une fois l'adresse IP attribuée nous irons sur cette fenêtre :
 
-![AD](./img/ad_menu.PNG)
+![AD](./img/ad_menu.png)
 
 Ensuite nous devons installer **les différents rôles** que nous voulions que notre serveur gère, dans notre cas ce sera **le DNS**, **le DHCP** et **l'AD DS** :
 
-![AD_Roles](./img/ad_roles.PNG)
+![AD_Roles](./img/ad_roles.png)
 
 Puis **next** jusqu'à la catégorie **"Confirmation"** :
 
