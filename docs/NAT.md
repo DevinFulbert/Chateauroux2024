@@ -84,11 +84,9 @@ Puis on a **configurer l'IP route par défaut** :
 
 `ip nat inside` <-- Réseau **Interne**
 
-Ensuite on devra **créer une "plage" d'adresses** pour la traduction d'adresse :
+Pour la **traduction d'adresse** :
 
-`ip nat pool MY_POOL 183.44.36.1 183.44.36.1 netmask 255.255.255.252`
-
-`ip nat inside source list 1 pool MY_POOL`
+`ip nat inside source list 1 interface gigabitEthernet 0/0 overload`
 
 Puis on a **configurer l'IP route par défaut** :
 
