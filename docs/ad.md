@@ -54,11 +54,11 @@ Puis **next** jusqu'à la catégorie **"Confirmation"** :
 
 ![Alt text](./img/ad_domaine.png)
 
-![Alt text](./img/ad_rootdomain.png)
+![Alt text](./img/ad_rootdomain.PNG)
 
 A la place du **mylab.local** entrer votre nom de domaine que vous voulez
 
-![Alt text](./img/ad_domainmdp.png)
+![Alt text](./img/ad_domainmdp.PNG)
 
 Ensuite **next** jusqu'à **Additional Options** :
 
@@ -81,7 +81,7 @@ Pour se faire on ira **dans la section DHCP** puis nous arriverons sur cette fen
 
 #### <span style="color: black"> **Configuration de l'étendue (DHCP)** ####
 
-![Alt text](./img/nouv_etendue.png)
+![Alt text](./img/nouv_etendue.PNG)
 
 Pour ajouter un nom ça se trouvera à **la première étape de la création de l'étendue** (dans notre cas on l'a nommée **VLAN215_USERS**) :
 
