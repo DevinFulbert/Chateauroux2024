@@ -7,7 +7,7 @@ nav :
   - Châteauroux IP / VLAN : index.md
   - Composition du site de Châteauroux : documentation.md
   - Schéma détaillé du réseau global de Châteauroux : shemareseau.md
-  - Définition d'un nom de domaine et création d'un compte SSH sur SWITCH Cisco : ssh.md
+  - Définition d'un nom de domaine / SSH : ssh.md
   - Contrôleur de domaine : ad.md
   - Pare-Feu : parefeu.md
   - Routeur : routeur.md
