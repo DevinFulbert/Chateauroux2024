@@ -42,17 +42,9 @@ Une fois l'adresse IP attribuée nous irons sur cette fenêtre :
 
 ![AD](./img/ad_menu.png)
 
-Ensuite nous devons installer **les différents rôles** que nous voulions que notre serveur gère, dans notre cas ce sera **le DNS**, **le DHCP** et **l'AD DS** :
-
-![AD_Roles](./img/ad_roles.png)
-
-Puis **next** jusqu'à la catégorie **"Confirmation"** :
-
 ![AD_Confirmation](./img/ad_confirmation.png)
 
 ### <span style="color: black"> **Active Directory Domain Services** ###
-
-![Alt text](./img/ad_domaine.png)
 
 ![Alt text](./img/ad_rootdomain.PNG)
 
@@ -67,10 +59,6 @@ Le notre se transformera par la suite par **local.chateauroux.sportludique.fr**
 
 ![Alt text](./img/ad_netbiosname.PNG)
 
-Puis plus rien à configurer sur l'AD DS plus qu'a appuyer sur **next** et **lancer l'installation** !
-
-![Alt text](./img/ad_addsinstall.PNG)
-
 ### <span style="color: black"> **DHCP** ###
 
 Pour la configuration **DHCP** :
@@ -82,24 +70,6 @@ Pour se faire on ira **dans la section DHCP** puis nous arriverons sur cette fen
 #### <span style="color: black"> **Configuration de l'étendue (DHCP)** ####
 
 ![Alt text](./img/nouv_etendue.PNG)
-
-Pour ajouter un nom ça se trouvera à **la première étape de la création de l'étendue** (dans notre cas on l'a nommée **VLAN215_USERS**) :
-
-![nom](./img/étendue_nom.png)
-
-En adresse de début on y inscrit : **172.28.5.1** qui correspond à **la première adresse du VLAN215 utilisable par un hôte** ainsi que **l'adresse de fin : 172.28.5.254**
-
-Puis en longueur, **la longueur de notre masque donc 24 qui correspond à 255.255.255.0**
-
-![Alt text](./img/adresses_etendue.png)
-
-Ensuite nous pouvons aller à l'étape suivante qui est **d'exclure des adresses de l'étendue** créer avant, pour notre cas aucune adresse ce doit d'être exclue donc aucun paramètre attendu de notre part
-
-Pour la durée du bail on a laissé **8 jours (valeur par défaut)** ce paramètre spécifie **la durée qu'un client peut utiliser une adresse IP dans l'étendue**.
-
-A la fin de la configuration de la durée, on nous demande de **configurer les options DHCP maintenant ou plus tard** (on a choisi maintenant)
-
-![Alt text](./img/parametre_dhcp.png)
 
 On procèdera alors à **la configuration des options DHCP** :
 
