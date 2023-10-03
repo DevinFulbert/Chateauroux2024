@@ -88,3 +88,7 @@ Pour finir **un dossier se créera dans la section IPV4** **au nom de votre éte
 A la fin de votre configuration DHCP dans la catégorie **Serveur Local** vous devriez avoir ceci :
 
 ![Alt text](./img/local.png)
+
+**Le DHCP** ne fera pas son "job" étant donné qu'il n'est **pas dans le même réseau que les clients** c'est pour cela qu'il faudra **activé le relais DHCP** pour permettre au DHCP de faire son travail tout en étant pas dans le réseau
+
+![Relais](./img/relais.png)
