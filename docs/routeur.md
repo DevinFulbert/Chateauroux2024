@@ -49,3 +49,35 @@ On commence par **configurer un nom de domaine** au routeur :
 **`ip ssh time-out 60`** Un timeout de 60 secondes est ajouté en cas d'inactivité durant l'authentification.
 
 **`ip ssh authentication-retries 3`** Nous laissons trois essais pour la connexion au routeur. Suite à ces essais, la connexion sera fermée.
+
+### <span style="color: black"> **Configuration de la gateway du routeur** ###
+
+#### <span style="color: black"> **R1** ####
+
+Gateway : **`172.28.3.253 /24`**
+
+#### <span style="color: black"> **R2** ####
+
+Gateway : **`172.28.3.252 /24`**
+
+### <span style="color: black"> **Configuration du protocole GLBP** ###
+
+GLBP, qui signifie "Gateway Load Balancing Protocol" (Protocole d'équilibrage de charge de passerelle), est un protocole de routage de premier saut (First Hop Routing) développé par Cisco Systems. Il est principalement utilisé pour répartir la charge du trafic entre plusieurs routeurs ou passerelles dans un réseau local (LAN) afin d'améliorer la disponibilité et la performance des passerelles par défaut.
+
+Pour configurer le protocole, il faudra accéder à l'un des routeurs puis saissir cette commande :
+
+#### <span style="color: black"> ** R1 et R2 ** ####
+
+**`enable`**
+
+**`conf t`**
+
+**`interface g0/1`**
+
+**`glbp 1 ip 172.28.3.254`**
+
+**`glbp 1 load-balancing round-robin`**
+
+On peut ensuite verifier si la commande s'est bien appliquée en vérifiant avec la commande:
+
+**`show run`**
