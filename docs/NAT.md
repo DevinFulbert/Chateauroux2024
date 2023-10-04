@@ -113,3 +113,5 @@ Le port mirroring est une fonctionnalité de gestion de réseau qui permet de co
 ° Pour vérifier si la fonctionnalité s'est bien appliquée :
 
 `show monitor session 1`
+
+![Schéma](./img/ShowMotoring.png)
