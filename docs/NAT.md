@@ -94,3 +94,22 @@ Puis on a **configurer l'IP route par défaut** :
 
 `access-list 1 permit 172.28.0.0 0.0.31.255`
 
+## <span style="color: black"> **Capture de trafic réseau à d'un port mirroring** ##
+
+Le port mirroring est une fonctionnalité de gestion de réseau qui permet de copier le trafic réseau provenant d'un ou plusieurs ports d'un commutateur réseau (ou switch) vers un autre port spécialement configuré à cet effet, appelé "port miroir" ou "port de surveillance." Cette fonctionnalité est couramment utilisée à des fins de dépannage, de surveillance réseau et d'analyse du trafic. 
+
+° Pour appliquer le port mirroring sur le **port source** :
+
+`conf t`
+
+`monitor session 1 source interface [nom et numéro de port] both`
+
+° Pour appliquer le port mirroring sur le **port destination** :
+
+`conf t`
+
+`monitor session 1 destination interface [nom et numéro de port]`
+
+° Pour vérifier si la fonctionnalité s'est bien appliquée :
+
+`show monitor session 1`
