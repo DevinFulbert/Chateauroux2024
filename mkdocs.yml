@@ -13,3 +13,4 @@ nav :
   - Routeur : routeur.md
   - NAT : NAT.md
   - Confs : conf.md
+  - DMZ Privé : apache.md
