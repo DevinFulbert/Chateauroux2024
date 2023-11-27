@@ -14,3 +14,5 @@ nav :
   - NAT : NAT.md
   - Confs : conf.md
   - DMZ Privé : apache.md
+  - Docker : docker.md
+  - VPN : VPN.md
