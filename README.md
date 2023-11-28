@@ -3,4 +3,4 @@
 Projet de BTS SIO 2ème Année
 
 Site : Chateauroux
-Contributeurs : Dévin, Ismaël, Yan
+Contributeurs : Dévin, Ismaël, Yann
