@@ -6,9 +6,7 @@ En informatique, **un réseau privé virtuel ou réseau virtuel privé**, plus c
 
 ### Routeur 1 et 2
 
-**Routeur 1** :`ip nat inside source static udp 221.87.136.2 1194 interface GigabitEthernet0/1 1194`
-
-**Routeur 2** :`ip nat inside source static udp 183.44.36.1 1194 interface GigabitEthernet0/1 1194`
+**Redirection à faire** :`ip nat inside source static udp 172.28.3.2 1194 interface GigabitEthernet0/0 1194` (à faire sur les deux routeurs)
 
 ## Installation du VPN sur Stormshield
 
