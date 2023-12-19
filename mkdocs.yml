@@ -16,3 +16,6 @@ nav :
   - DMZ Privé : apache.md
   - Docker : docker.md
   - VPN : VPN.md
+  - Reverse Proxy: rp.md
+  - Messagerie : msg.md
+  - Supervision : supervision.md
