@@ -20,4 +20,4 @@ En informatique, **un réseau privé virtuel ou réseau virtuel privé**, plus c
 
 ### Configuration VPN
 
-![vpn conf](./img/vpn.jpg)
+![vpn conf](./img/VPN_Adresse.png)
