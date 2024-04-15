@@ -21,3 +21,9 @@ En informatique, **un réseau privé virtuel ou réseau virtuel privé**, plus c
 ### Configuration VPN
 
 ![vpn conf](./img/VPN_Adresse.png)
+
+### Configuration portail captif
+
+![Profil Captif](./img/portail_captif.png)
+
+**Adresse IP à taper sur URL** :`https://221.87.136.2:9443(addresse IP/FQDN)`
