@@ -1,0 +1,862 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../WIFI/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>OwnCloud - Chateauroux</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#12-owncloud" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Chateauroux" class="md-header__button md-logo" aria-label="Chateauroux" data-md-component="logo">
+      
+  <img src="../F5xJkAnWYAAG7eY.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chateauroux
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OwnCloud
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Chateauroux" class="md-nav__button md-logo" aria-label="Chateauroux" data-md-component="logo">
+      
+  <img src="../F5xJkAnWYAAG7eY.png" alt="logo">
+
+    </a>
+    Chateauroux
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Châteauroux IP / VLAN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composition du site de Châteauroux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shemareseau/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schéma détaillé du réseau global de Châteauroux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Définition d'un nom de domaine / SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contrôleur de domaine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parefeu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pare-Feu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routeur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Routeur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NAT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NAT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Confs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apache/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DMZ Privé
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VPN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rp.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reverse Proxy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../msg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Messagerie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supervision.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supervision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WIFI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Borne Wi-FI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OwnCloud
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    OwnCloud
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation-des-utilisateurs-present-dans-luo-informatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présentation des utilisateurs présent dans l'UO Informatique
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Présentation des utilisateurs présent dans l'UO Informatique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-des-pre-requis-pour-owncloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation des pré-requis pour OwnCloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation des pré-requis pour OwnCloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-interface-web-owncloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration interface web Owncloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration interface web Owncloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resolution-dns-prive-et-public" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résolution DNS Privé et Public
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Résolution DNS Privé et Public">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reverse-proxy-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reverse Proxy NGINX
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regle-nat-du-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Règle NAT du serveur
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation-des-utilisateurs-present-dans-luo-informatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présentation des utilisateurs présent dans l'UO Informatique
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Présentation des utilisateurs présent dans l'UO Informatique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-des-pre-requis-pour-owncloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation des pré-requis pour OwnCloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation des pré-requis pour OwnCloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-interface-web-owncloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration interface web Owncloud
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration interface web Owncloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resolution-dns-prive-et-public" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résolution DNS Privé et Public
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Résolution DNS Privé et Public">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reverse-proxy-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reverse Proxy NGINX
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regle-nat-du-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Règle NAT du serveur
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="12-owncloud">12/ OwnCloud</h1>
+<p>Mise en place d'Owncloud, plusieurs problèmes relevés : <strong>Owncloud pas compatible avec PHP 8</strong> et liaison LDAP. Accessible seulement pour les personnes présente dans une Unité d'Organisation bien défini (Informatique)</p>
+<h2 id="presentation-des-utilisateurs-present-dans-luo-informatique"><span style="color: black"> <strong>Présentation des utilisateurs présent dans l'UO Informatique</strong></h2>
+<p><img alt="UO-OwnCloud" src="../img/uo_owncloud.jpg" /></p>
+<p>Les utilisateurs doivent avant tout déverouillez leur compte et en changeant le mot de passe de ce dernier pour que Owncloud le découvre comme <strong>compte actif</strong></p>
+<h3 id="installation-des-pre-requis-pour-owncloud"><span style="color: black"> <strong>Installation des pré-requis pour OwnCloud</strong></h3>
+<p><code>sudo apt install apt-transport-https lsb-release ca-certificates wget</code></p>
+<p><code>sudo apt install apache2 mariadb-server</code></p>
+<p><code>sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg</code> &lt;- Pour PHP 7.4</p>
+<p><code>sudo apt install php7.4-{xml,intl,common,json,curl,mbstring,mysql,gd,imagick,zip,opcache} libapache2-mod-php7.4</code></p>
+<p><code>sudo mysql_secure_installation</code></p>
+<p><code>sudo mysql -u root -p</code></p>
+<pre><code>Création de la base de données :
+</code></pre>
+<p><code>CREATE DATABASE owncloud;</code>
+ <code>CREATE USER 'ownclouduser'@'localhost' IDENTIFIED BY 'your_password';</code>
+ <code>GRANT ALL ON owncloud.* TO 'ownclouduser'@'localhost';</code>
+ <code>FLUSH PRIVILEGES;</code>
+ <code>EXIT;</code></p>
+<p><code>wget https://download.owncloud.com/server/stable/owncloud-latest.tar.bz2</code> &lt;- OwnCloud</p>
+<p><code>sudo chown -R www-data:www-data /var/www/html/owncloud</code> &lt;- Les permissions</p>
+<p><code>sudo nano /etc/apache2/sites-available/owncloud.conf</code> &lt;- Conf Owncloud</p>
+<p><code>Alias /owncloud "/var/www/html/owncloud/"</code></p>
+<p><code>&lt;Directory /var/www/html/owncloud/&gt;</code>
+   <code>Options +FollowSymlinks</code>
+   <code>AllowOverride All</code></p>
+<p><code>&lt;IfModule mod_dav.c&gt;</code>
+    <code>Dav off</code>
+   <code>&lt;/IfModule&gt;</code></p>
+<p><code>SetEnv HOME /var/www/html/owncloud</code>
+   <code>SetEnv HTTP_HOME /var/www/html/owncloud</code>
+ <code>&lt;/Directory&gt;</code></p>
+<p><code>sudo a2ensite owncloud</code> &lt;- Activation du site Owncloud
+  <code>sudo a2enmod rewrite headers env dir mime</code>
+  <code>sudo systemctl restart apache2</code></p>
+<p>Plus qu'à configurer sur l'interface web</p>
+<h4 id="configuration-interface-web-owncloud"><span style="color: black"> <strong>Configuration interface web Owncloud</strong></h4>
+<p><img alt="WEB-OwnCloud" src="../img/interface_web_owncloud.webp" />
+<img alt="LOGIN-OwnCloud" src="../img/Login-to-owncloud.webp" />
+<img alt="Market-OwnCloud" src="../img/market.jpg" />
+<img alt="LDAP-OwnCloud" src="../img/ldap.jpg" /></p>
+<h5 id="resolution-dns-prive-et-public"><span style="color: black"> <strong>Résolution DNS Privé et Public</strong></h5>
+<p><img alt="DNS-pub" src="../img/resolution_dns_pub.jpg" />
+<img alt="DNS-prive" src="../img/resolution_dns.jpg" /></p>
+<h6 id="reverse-proxy-nginx"><span style="color: black"> <strong>Reverse Proxy NGINX</strong></h6>
+<p><img alt="owncloud-conf" src="../img/owncloud_conf.jpg" />
+<img alt="RP-Owncloud" src="../img/rp_owncloud.jpg" /></p>
+<h6 id="regle-nat-du-serveur"><span style="color: black"> <strong>Règle NAT du serveur</strong></h6>
+<p><img alt="Nat-Owncloud" src="../img/nat_rp_owncloud.jpg" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
